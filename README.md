@@ -8,15 +8,15 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Bernardo Belini Vale
+- Matricula: 
+- Proposta de projeto escolhida: Blog automotivo
 - Breve descrição sobre seu projeto:
 
 
 ## Print do(s) wireframe(s) criado
 
-<<  COLOQUE A IMAGEM AQUI >>
+![wireframe](public/wireframe.jpg)
 
 
 ## Print da home-page criada

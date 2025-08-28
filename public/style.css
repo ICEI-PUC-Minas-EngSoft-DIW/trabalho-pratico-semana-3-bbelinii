@@ -1,3 +1,100 @@
 body {
     background-color: aquamarine;
+    margin: 0; /* Remove a borda azul do body */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(to right, black, white);
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 15px 15px; /* Só as bordas de baixo arredondadas */
+    height: 150px; /* Diminua a altura do header */
+}
+
+.header header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo img{
+    position: absolute;
+    height: 180px; /* menor */
+    top: -19px;    /* mais para cima */
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(32, 19, 2);
+}
+
+.mensagembanner {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.mensagembanner p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.menul {
+    position: absolute;
+    top: 320px;      /* ajuste para centralizar verticalmente */
+    left: 40px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    height: 450px;   /* menor altura */
+    width: 220px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: black;
+}
+
+.principais ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+}
+
+.principais li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.menur{
+    position: absolute;
+    left: 30%;
+    top: 46%;
+    height: 700px;
+    width: 900px;
+}
+
+#busca{
+    position: absolute;
+    left: 100%;
+}
+.mensagembanner{
+    font-size: 40px;
 }
