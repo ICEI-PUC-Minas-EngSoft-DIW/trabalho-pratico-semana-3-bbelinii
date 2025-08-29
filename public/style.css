@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'race';
+    src: url('High\ Speed.otf') format('opentype');
+    font-weight: normal;
+}
+
 body {
     background-color: aquamarine;
     margin: 0; /* Remove a borda azul do body */
@@ -32,7 +38,7 @@ body {
     gap: 20px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 60px;
 }
 
 .menu li {
@@ -51,7 +57,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'race', sans-serif;
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -94,7 +100,17 @@ body {
 #busca{
     position: absolute;
     left: 100%;
+    border: solid;
+    border-radius: 2%;
+
 }
 .mensagembanner{
     font-size: 40px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    margin-left: 30px;
 }
