@@ -5,10 +5,15 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: aliceblue;
+    background-size: cover;
     margin: 0; /* Remove a borda azul do body */
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    position: relative; /* Para que o footer funcione corretamente */
 }
 
 .header {
@@ -35,6 +40,7 @@ body {
 
 .menu ul {
     display: flex;
+    font-family: 'race', sans-serif;
     gap: 20px;
     list-style: none;
     margin: 0;
@@ -65,15 +71,15 @@ body {
 
 .menul {
     position: absolute;
-    top: 320px;      /* ajuste para centralizar verticalmente */
+    top: 360px;      /* ajuste para centralizar verticalmente */
     left: 40px;
     background: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    height: 450px;   /* menor altura */
+    height: 350px;   /* menor altura */
     width: 220px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'race', sans-serif;
     font-size: medium;
     color: black;
 }
@@ -92,25 +98,90 @@ body {
 .menur{
     position: absolute;
     left: 30%;
-    top: 46%;
+    top: 37%;
     height: 700px;
-    width: 900px;
+    width: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#busca{
+.imgperf{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    left: 16%;
+    border: #333 solid;
+    border-radius: 12%;
+}
+
+.menur h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+}
+.menur button {
+    position: relative;
+    margin-left: 20%;
+    transform: translateX(-100%);
+    border: 2px solid #333; /* Cor da borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 200px; /* Largura do campo */
+    outline: none; /* Remove o contorno padrão */
+    transition: all 0.3s ease; /* Efeito de transição */
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #007BFF; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+#busca {
     position: absolute;
     left: 100%;
-    border: solid;
-    border-radius: 2%;
-
+    transform: translateX(-100%);
+    border: 2px solid #333; /* Cor da borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 200px; /* Largura do campo */
+    outline: none; /* Remove o contorno padrão */
+    transition: all 0.3s ease; /* Efeito de transição */
 }
+
+#busca:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Efeito de foco */
+}
+
+#busca::placeholder {
+    color: #aaa; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do texto do placeholder */
+}
+
 .mensagembanner{
     font-size: 40px;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 300px;
-    margin-left: 30px;
+footer {
+    display: flex;
+    justify-content: space-between; /* Alinha o texto e a imagem */
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    width: 100%;
+    position: absolute; /* Fixa o footer no final da página */
+    bottom: 0; /* Posiciona no rodapé */
+}
+
+footer img {
+    height: 80px; /* Ajuste o tamanho do logo */
+    margin-right: 35%;
+}
+
+footer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40%;
 }
