@@ -11,7 +11,7 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 - Nome: Bernardo Belini Vale
 - Matricula: 
 - Proposta de projeto escolhida: Blog automotivo
-- Breve descrição sobre seu projeto:
+- Breve descrição sobre seu projeto: O projeto consiste na criação de um blog automotivo interativo, voltado para compartilhar conhecimentos, novidades e experiências do universo dos carros esportivos e modificados, especialmente temas como motores, turbo, elétrica, estética e injeção programável.
 
 
 ## Print do(s) wireframe(s) criado
